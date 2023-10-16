@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(to bottom, #333, #666);
+}
+
+header {
+    background-color: #FF5733;
+    color: #fff;
+    padding: 20px 0;
+    text-shadow: 1px 1px 2px #000;
+}
+
+button {
+    background-color: #FF5733;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #FF5722;
+    transform: scale(1.05);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    display: none;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+input[type="file"] {
+    margin: 10px 0;
+}
+
+button, input[type="text"] {
+    width: 100%;
+}
+
+#searchResults {
+    margin: 20px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+@keyframes glow {
+    0% { box-shadow: 0 0 10px #FF5733; }
+    50% { box-shadow: 0 0 20px #FF5733, 0 0 30px #FF5722; }
+    100% { box-shadow: 0 0 10px #FF5733; }
+}
+
+button:active {
+    animation: glow 0.5s ease;
+}
